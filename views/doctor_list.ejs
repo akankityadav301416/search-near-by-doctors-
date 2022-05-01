@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: rgb(216, 250, 215);
+      }
+      #doctor {
+        height: 20px;
+        width: 100%;
+      }
+      a:link {
+        color: red;
+      }
+
+      /* visited link */
+      a:visited {
+        color: green;
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: hotpink;
+      }
+
+      /* selected link */
+      a:active {
+        color: blue;
+      }
+      a:link {
+        text-decoration: none;
+      }
+
+      a:visited {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      a:active {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2 id="text">Here the list of doctors</h2>
+    </div>
+    <div id="doctorlist">
+      <% if(locals.user){%> <% for(element of arr){%>
+      <div id="doctor">
+        <a href="/doctors/<%= element[2]%>"
+          ><%= element[0] %>(<% if(element[1]>=5000){%> Please Allow Location to
+          Get Distance <%} else{%> <%= element[1] %> <%}%>)</a
+        >
+      </div>
+      <%}%> <%}%>
+    </div>
+  </body>
+</html>

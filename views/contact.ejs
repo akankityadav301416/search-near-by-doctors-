@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://img.icons8.com/ios-glyphs/30/000000/domain.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(216, 250, 215);
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #e9e9e9;
+      }
+
+      .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      #contact1 {
+        background-color: #2196f3;
+        color: white;
+      }
+
+      .search-container {
+        float: right;
+        display: flex;
+        align-items: center;
+      }
+
+      input[type="text"] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+      }
+
+      .search-container button {
+        float: right;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .search-container button:hover {
+        background: #ccc;
+      }
+
+      @media screen and (max-width: 600px) {
+        .search-container {
+          float: none;
+        }
+        a,
+        input[type="text"],
+        .search-container button {
+          float: none;
+          display: block;
+          text-align: left;
+          width: 100%;
+          margin: 0;
+          padding: 14px;
+        }
+        input[type="text"] {
+          border: 1px solid #ccc;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a class="active" href="/">Home</a>
+      <a id="about" href="/about">About</a>
+      <a id="contact1" href="/contact">Contact</a>
+    </div>
+
+    <section id="contact">
+      <h1 class="section-heading mb50px">
+        <span>
+          <i class="far fa-address-card"></i>
+        </span>
+        <span> Contact </span>
+      </h1>
+      <div id="contact-container">
+        <div id="contact-form-container">
+          <form id="contact-form">
+            <input
+              id="input-name"
+              name="name"
+              type="text"
+              placeholder="Your Name"
+            />
+            <input
+              id="input-email"
+              name="input-email"
+              type="text"
+              required
+              placeholder="Your Email"
+            />
+            <textarea
+              id="input-message"
+              name="input-message"
+              rows="2"
+              cols="40"
+              placeholder="Message"
+            ></textarea>
+            <button class="sub-btn" type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
+        <div id="my-details-container">
+          <h3>Get In touch</h3>
+          <p></p>
+
+          <h3>NIT Kurukshetra (136119)</h3>
+          <div class="my-details-info-container">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Kurukshetra Haryana, India</span>
+          </div>
+          <div class="my-details-info-container">
+            <i class="fas fa-mobile-alt"></i>
+            <span>9013209789</span>
+          </div>
+          <div class="my-details-info-container">
+            <i class="fas fa-mobile-alt"></i>
+            <span>9792531286</span>
+          </div>
+          <div class="my-details-info-container">
+            <i class="fas fa-mobile-alt"></i>
+            <span>9116802474</span>
+          </div>
+          <div class="my-details-info-container">
+            <i class="far fa-envelope"></i>
+            <span>ankit_11815014@nitkkr.ac.in</span>
+            
+          </div>
+          <div class="my-details-info-container">
+            <i class="far fa-envelope"></i>
+            
+            <span>varun_11815009@nitkkr.ac.in</span>
+            
+          </div>
+          <div class="my-details-info-container">
+            <i class="far fa-envelope"></i>
+            
+            <span>rahul_11815024@nitkkr.ac.in</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center social-icons">
+        <ul class="no-list-style horizontal-list">
+          <li>
+            <a href="https://www.linkedin.com/in/rahul-sharma-b060071ab/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="" target="_blank">
+              <i class="fab fa-stack-overflow"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="" target="_blank">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/100027097991951">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="" target="_blank">
+              <i class="fab fa-quora"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

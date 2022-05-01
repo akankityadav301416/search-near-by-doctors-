@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<htm>
+  <head>
+    <style>
+      body {
+        background-color: rgb(216, 250, 215);
+      }
+      h3 {
+        color: rgb(0, 255, 102);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Doctor Details:</h2>
+    <h3>Name:<%=profile_user.name%></h3>
+    <h3>Address:<%=profile_user.address%></h3>
+    <h3>MobileNo:<%=profile_user.mobileNo%></h3>
+    <h3>Specialization:<%=profile_user.specialization%></h3>
+    <h3>Hospital Name:<%=profile_user.hospitalName%></h3>
+    <h3>
+      Distance From You:<% if(profile_user.user_distance>=5000){%> Please Allow
+      Location to Get Distance <%} else{%>
+      <%=profile_user.user_distance.toFixed(2)%>KM <%}%>
+    </h3>
+  </body>
+</htm>

@@ -1,0 +1,235 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(216, 250, 215);
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #e9e9e9;
+      }
+
+      .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      #about {
+        background-color: #2196f3;
+        color: white;
+      }
+
+      .search-container {
+        float: right;
+        display: flex;
+        align-items: center;
+      }
+
+      input[type="text"] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+      }
+
+      .search-container button {
+        float: right;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .search-container button:hover {
+        background: #ccc;
+      }
+
+      @media screen and (max-width: 600px) {
+        .search-container {
+          float: none;
+        }
+        a,
+        input[type="text"],
+        .search-container button {
+          float: none;
+          display: block;
+          text-align: left;
+          width: 100%;
+          margin: 0;
+          padding: 14px;
+        }
+        input[type="text"] {
+          border: 1px solid #ccc;
+        }
+      }
+
+
+      body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.image{
+  width: 100px;
+  height: 250px;
+  border-radius: 100%;
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a id="home" class="active" href="/">Home</a>
+      <a id="about" href="/about">About</a>
+      <a id="contact" href="/contact">Contact</a>
+    </div>
+    <div id="main">
+        <div class="about-section">
+            <h1>About Us </h1>
+            <p>We are the final year students of NIT Kurukshetra of ECE Department and we have built a website for searching the near by doctor available to the user</p>
+          </div>
+          
+          <h2 style="text-align:center">Our Team</h2>
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <img class="image" src="/images/rahul.jpg" alt="Rahul" style="width:100%">
+                <div class="container">
+                  <h2>Rahul Sharma</h2>
+                  <p class="title">Full Stack Web Developer</p>
+                  <p></p>
+                  <p>rahul_11815024@nitkkr.ac.in</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img class="image" src="/images/ankit.jpg" alt="Ankit" style="width:100%">
+                <div class="container">
+                  <h2>Ankit Yadav</h2>
+                  <p class="title">Full Stack Web Developer</p>
+                  <p></p>
+                  <p>ankit_11815014@nitkkr.ac.in</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img class="image" src="images/varun.jpg" alt="Varun" style="width:100%">
+                <div class="container">
+                  <h2>Varun Pathak</h2>
+                  <p class="title">Full Stack Web Developer</p>
+                  <p></p>
+                  <p>varun_11815009@nitkkr.ac.in</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+    </div>
+  </body>
+</html>
+
